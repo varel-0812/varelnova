@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>UAS VAREL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body class="bg-slate-900 text-white">
+    <div id="cursor"></div>
+<div id="cursor-blur"></div>
+
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed w-full z-50 transition-all">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold tracking-wide">MyPortfolio</h1>
+
+    <nav class="hidden md:flex gap-8">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#profile" class="nav-link">Profile</a>
+      <a href="#project" class="nav-link">Project</a>
+      <a href="#media" class="nav-link">Media</a>
+      <a href="#informasi" class="nav-link">Informasi</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero-section min-h-screen flex items-center">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div class="fade-in">
+      <p class="text-indigo-400 mb-3">Halo, saya</p>
+      <h1 class="text-5xl font-extrabold mb-4">Varel <span class="text-purple-400">Noval Budiarto</span></h1>
+      <div class="flex justify-center md:justify-end fade-in">
+        <div class="hero-photo">
+          <img
+            src="PP.jpeg"
+            alt="Foto Profil"
+            class="w-72 h-72 md:w-80 md:h-80 object-cover rounded-full"
+          >
+        </div>
+      </div>
+      
+      <a href="#project" class="btn-primary">Lihat Karya</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="section">
+    <h2 class="section-title">Profile</h2>
+  
+    <div class="grid md:grid-cols-2 gap-6">
+  
+      <!-- DATA DIRI -->
+      <div class="glass-card hover-3d glow-card fade-in">
+      <div class="glass-card hover-3d fade-in">
+        <h3 class="text-xl font-semibold mb-3 flex items-center gap-2">
+          <i class="fas fa-id-card text-purple-400"></i> Data Diri
+        </h3>
+        <p><strong>Nama:</strong> Varel Nova Budiarto<p>
+        <p><strong>NIM:</strong> 251011701026</p>
+        <p><strong>Kelas:</strong> 01SIFP017</p>
+      </div>
+      </div>
+  
+      <!-- KEAHLIAN -->
+      <div class="glass-card hover-3d glow-card fade-in">
+      <div class="glass-card hover-3d fade-in">
+        <h3 class="text-xl font-semibold mb-3 flex items-center gap-2">
+          <i class="fas fa-tools text-indigo-400"></i> Keahlian & Minat
+        </h3>
+        <ul class="list-disc list-inside text-gray-200">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Tailwind CSS</li>
+          <li>Minat: Web Design & UI/UX</li>
+        </ul>
+      </div>
+  </div>
+
+      <!-- PENGALAMAN KERJA -->
+      <div class="glass-card hover-3d glow-card fade-in">
+      <div class="glass-card hover-3d fade-in">
+        <h3 class="text-xl font-semibold mb-3 flex items-center gap-2">
+          <i class="fas fa-briefcase text-pink-400"></i> Pengalaman Kerja
+        </h3>
+        <p>- PT Java digital nusantara </p>
+        <p> - PT Kolling printing </p>
+        <p>SPX</p>
+      </div>
+  </div>
+      <!-- PENDIDIKAN -->
+      <div class="glass-card hover-3d glow-card fade-in">
+      <div class="glass-card hover-3d fade-in">
+        <h3 class="text-xl font-semibold mb-3 flex items-center gap-2">
+          <i class="fas fa-graduation-cap text-green-400"></i> Pendidikan
+        </h3>
+        <ul class="list-disc list-inside text-gray-200">
+          <li>SMK LETRIS 2 INDONESIA</li>
+          <li>Universitas Pamulang - Sistem Informasi</li>
+        </ul>
+      </div>
+  </div>
+
+      <!-- KONTAK -->
+      <div class="glass-card hover-3d glow-card fade-in">
+      <div class="glass-card hover-3d fade-in md:col-span-2">
+        <h3 class="text-xl font-semibold mb-3 flex items-center gap-2">
+          <i class="fas fa-address-book text-yellow-400"></i> Kontak
+        </h3>
+        <p><strong>Email:</strong> iyelbudiarto06@gmail.com</p>
+        <p><strong>No. HP:</strong> 0895321613181</p>
+        <p><strong>Alamat:</strong> Tangerang Selatan, Banten</p>
+      </div>
+  </div>
+    </div>
+  </section>
+  
+
+<!-- PROJECT -->
+<section id="project" class="section bg-gradient">
+  <h2 class="section-title">Project</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="glass-card hover-3d glow-card project-card fade-in">
+    <div class="glass-card hover-3d fade-in">
+      <h3>Website Portofolio</h3>
+      <p>Desain modern menggunakan Tailwind</p>
+      </div>
+    </div>
+    <div class="glass-card hover-3d glow-card project-card fade-in">
+    <div class="glass-card hover-3d fade-in">
+      <h3>Landing Page</h3>
+      <p>Responsive & interaktif</p>
+    </div>
+    </div>
+    <div class="glass-card hover-3d glow-card project-card fade-in">
+    <div class="glass-card hover-3d fade-in">
+      <h3>UI Design</h3>
+      <p>HTML Framework</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section id="media" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16 glow-text">
+        Media 
+      </h2>
+  
+      <div class="grid md:grid-cols-2 gap-8">
+  
+        <!-- VIDEO -->
+        <div class="glass-card glow-card hover-3d media-card">
+          <h3 class="media-title">🎬 Video Project</h3>
+          <video controls class="media-video">
+            <source src="ALEXX.mp4" type="video/mp4">
+          </video>
+        </div>
+  
+        <!-- AUDIO -->
+        <div class="glass-card glow-card hover-3d media-card">
+          <h3 class="media-title">🎧 Audio Portfolio</h3>
+          <audio controls class="media-audio">
+            <source src="audio.mp3" type="audio/mpeg">
+          </audio>
+          <audio controls class="media-audio">
+            <source src="audio2.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+  
+        <!-- IMAGE 1 -->
+        <div class="glass-card glow-card hover-3d media-card image-card">
+          <img src="p1.jfif" alt="Media Image 1">
+        </div>
+  
+        <!-- IMAGE 2 -->
+        <div class="glass-card glow-card hover-3d media-card image-card">
+          <img src="p2.jpg" alt="Media Image 2">
+        </div>
+  
+      </div>
+  
+      <!-- PDF DOWNLOAD -->
+      <div class="mt-16 text-center">
+        <a href="TES.pdf" download class="pdf-btn">
+          📄 Download PDF Portfolio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFORMASI -->
+<section id="informasi" class="section relative overflow-hidden">
+    <h2 class="section-title">Informasi</h2>
+  
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+  
+      <!-- LAYANAN -->
+      <div class="glass-card hover-3d glow-card fade-in">
+        <h3 class="info-title">
+          <i class="fas fa-gem text-purple-400"></i>
+          Layanan Premium
+        </h3>
+  
+        <div class="space-y-4">
+  
+          <div class="service-item">
+            <i class="fas fa-code"></i>
+            <div>
+              <h4>Web Development</h4>
+              <p>Website modern, responsif & cepat</p>
+            </div>
+            <span class="badge">Best</span>
+          </div>
+  
+          <div class="service-item">
+            <i class="fas fa-palette"></i>
+            <div>
+              <h4>UI / UX Design</h4>
+              <p>Desain menarik & user friendly</p>
+            </div>
+          </div>
+  
+          <div class="service-item">
+            <i class="fas fa-bolt"></i>
+            <div>
+              <h4>Optimization</h4>
+              <p>SEO, performance & accessibility</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- STATISTIK -->
+      <div class="glass-card hover-3d glow-card fade-in">
+        <h3 class="info-title">
+          <i class="fas fa-chart-simple text-indigo-400"></i>
+          Statistik
+        </h3>
+  
+        <div class="grid grid-cols-2 gap-6 text-center">
+  
+          <div class="stat-box">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Project</span>
+          </div>
+  
+          <div class="stat-box">
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Klien Puas</span>
+          </div>
+  
+          <div class="stat-box">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Tahun</span>
+          </div>
+  
+          <div class="stat-box">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Kepuasan</span>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- TIMELINE -->
+      <div class="glass-card hover-3d glow-card fade-in">
+        <h3 class="info-title">
+          <i class="fas fa-road text-pink-400"></i>
+          Timeline Perjalanan
+        </h3>
+  
+        <div class="timeline">
+  
+          <div class="timeline-item">
+            <span>2024</span>
+            <p>Mulai belajar Web Development</p>
+          </div>
+  
+          <div class="timeline-item">
+            <span>2025</span>
+            <p>Mengerjakan project portofolio & UAS</p>
+          </div>
+  
+          <div class="timeline-item active">
+            <span>2026</span>
+            <p>Fokus Front-End & UI/UX Profesional</p>
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- FAQ -->
+      <div class="glass-card hover-3d glow-card fade-in">
+        <h3 class="info-title">
+          <i class="fas fa-comments text-green-400"></i>
+          Pertanyaan Umum
+        </h3>
+  
+        <details class="faq-item">
+          <summary>Apakah menerima freelance? <i class="fas fa-plus"></i></summary>
+          <p>Ya, menerima freelance sesuai kesepakatan.</p>
+        </details>
+  
+        <details class="faq-item">
+          <summary>Berapa lama pengerjaan? <i class="fas fa-plus"></i></summary>
+          <p>3–14 hari tergantung kompleksitas.</p>
+        </details>
+  
+        <details class="faq-item">
+          <summary>Apakah ada revisi? <i class="fas fa-plus"></i></summary>
+          <p>Tersedia revisi sesuai paket layanan.</p>
+        </details>
+  
+      </div>
+  
+    </div>
+  </section>
+  
+  
+<!-- CONTACT -->
+<section id="contact" class="section bg-gradient">
+    <h2 class="section-title">Contact</h2>
+  
+    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+  
+      <!-- INFORMASI KONTAK -->
+<div class="glass-card hover-3d glow-card fade-in">
+    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+      <i class="fas fa-address-card text-purple-400"></i>
+      Informasi Kontak
+    </h3>
+  
+    <div class="space-y-4 text-gray-300">
+  
+      <div class="flex items-start gap-4">
+        <i class="fas fa-envelope text-indigo-400 mt-1"></i>
+        <div>
+          <p class="font-medium text-white">Email</p>
+          <p>iyelbudiarto06@gmail.com</p>
+        </div>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i class="fas fa-phone text-green-400 mt-1"></i>
+        <div>
+          <p class="font-medium text-white">No. Telepon</p>
+          <p>0895321613181</p>
+        </div>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i class="fas fa-location-dot text-red-400 mt-1"></i>
+        <div>
+          <p class="font-medium text-white">Alamat</p>
+          <p>Tangerang Selatan, Banten</p>
+        </div>
+      </div>
+  
+      <div class="flex items-start gap-4">
+        <i class="fas fa-clock text-yellow-400 mt-1"></i>
+        <div>
+          <p class="font-medium text-white">Jam Kerja</p>
+          <p>Senin – Jumat, 08.00 – 17.00</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+      <!-- KIRIM PESAN -->
+      <div class="glass-card hover-3d glow-card fade-in">
+        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2">
+          <i class="fas fa-paper-plane text-indigo-400"></i> Kirim Pesan
+        </h3>
+        <form class="space-y-4">
+          <input type="text" placeholder="Nama Lengkap" class="input">
+          <input type="email" placeholder="Email" class="input">
+          <input type="text" placeholder="Subjek" class="input">
+          <textarea rows="4" placeholder="Pesan" class="input"></textarea>
+          <button class="btn-primary w-full">Kirim</button>
+        </form>
+      </div>
+  
+      <!-- MEDIA SOSIAL -->
+<div class="glass-card hover-3d glow-card fade-in">
+    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+      <i class="fas fa-share-nodes text-pink-400"></i>
+      Media Sosial
+    </h3>
+  
+    <div class="grid grid-cols-2 gap-4 text-gray-300">
+  
+      <a href="https://www.tiktok.com/@velnoo8?_r=1&_t=ZS-92qqEyJzgL2" class="social-item">
+        <i class="fab fa-linkedin text-blue-500"></i>
+        <span>Tiktok</span>
+      </a>
+  
+      <a href="https://www.instagram.com/vrelnb?igsh=MTUyMDF5dW9yMmlqYQ==" class="social-item">
+        <i class="fab fa-instagram text-pink-500"></i>
+        <span>Instagram</span>
+      </a>
+  
+      <a href="t.me/vanoobb" class="social-item">
+        <i class="fab fa-twitter text-sky-400"></i>
+        <span>Telegram</span>
+      </a>
+  
+      <a href="https://www.facebook.com/share/1DcQYs4DjX/" class="social-item">
+        <i class="fab fa-facebook text-blue-600"></i>
+        <span>Facebook</span>
+      </a>
+  
+      <a href="https://github.com/varel-0812" class="social-item col-span-2 justify-center">
+        <i class="fab fa-github text-gray-200"></i>
+        <span>GitHub</span>
+      </a>
+  
+    </div>
+  </div>
+
+      <!-- MAPS -->
+      <div class="glass-card hover-3d glow-card fade-in">
+        <h3 class="text-xl font-semibold mb-4 flex items-center gap-2">
+          <i class="fas fa-map-location-dot text-green-400"></i> Lokasi
+        </h3>
+        <iframe
+          class="w-full h-64 rounded-xl border border-white/10"
+          src="https://www.google.com/maps?q=Universitas+Pamulang+Viktor&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+  
+      <!-- PERTANYAAN UMUM -->
+<div class="glass-card hover-3d glow-card fade-in md:col-span-2">
+    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+      <i class="fas fa-circle-question text-yellow-400"></i>
+      Pertanyaan Umum
+    </h3>
+  
+    <div class="space-y-4">
+  
+      <details class="faq-item">
+        <summary>
+          Apakah menerima pekerjaan freelance?
+          <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+          Ya, saya menerima pekerjaan freelance sesuai kesepakatan dan
+          dapat dibahas lebih lanjut melalui form kontak.
+        </p>
+      </details>
+  
+      <details class="faq-item">
+        <summary>
+          Apakah tersedia revisi?
+          <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+          Tersedia revisi sesuai dengan paket layanan yang dipilih.
+        </p>
+      </details>
+  
+      <details class="faq-item">
+        <summary>
+          Berapa lama waktu pengerjaan?
+          <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+          Waktu pengerjaan berkisar antara 3–14 hari tergantung
+          tingkat kompleksitas project.
+        </p>
+      </details>
+  
+      <details class="faq-item">
+        <summary>
+          Bagaimana cara menghubungi Anda?
+          <i class="fas fa-chevron-down"></i>
+        </summary>
+        <p>
+          Anda dapat menghubungi saya melalui email, media sosial,
+          atau form kontak yang tersedia di halaman ini.
+        </p>
+      </details>
+  
+    </div>
+  </div>
+  
+    </div>
+  </section>
+  
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-gray-400">
+  © 2026 Varel Website UAS Portofolio
+</footer>
+
+</body>
+</html>
