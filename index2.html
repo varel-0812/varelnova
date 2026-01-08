@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Nilai Mahasiswa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body class="min-h-screen bg-gradient-to-br 
+from-slate-100 via-zinc-100 to-slate-200 
+dark:from-zinc-900 dark:via-slate-900 dark:to-zinc-900 
+p-6">
+
+<div class="max-w-6xl mx-auto">
+
+  <!-- HEADER -->
+  <header class="relative mb-10 rounded-2xl bg-gradient-to-r 
+  from-slate-800 to-zinc-800 p-6 text-white shadow-2xl">
+    <h1 class="text-3xl md:text-4xl font-semibold tracking-wide flex justify-center items-center gap-3">
+      <i class="fas fa-calculator text-indigo-400"></i>
+      Kalkulator Nilai Mahasiswa
+    </h1>
+
+    <button id="themeToggle" class="theme-toggle">
+      🌙
+    </button>
+  </header>
+
+  <!-- CONTENT -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <!-- INPUT -->
+    <section class="card">
+      <h2 class="section-title">
+        <i class="fas fa-pen"></i> Input Nilai
+      </h2>
+
+      <div class="space-y-4">
+        <input id="nama" class="input" placeholder="Nama Mahasiswa">
+        <input id="nim" class="input" placeholder="NIM">
+        <input id="matkul" class="input" placeholder="Mata Kuliah">
+
+        <input id="tugas" type="number" class="input" placeholder="Nilai Tugas">
+        <input id="uts" type="number" class="input" placeholder="Nilai UTS">
+        <input id="uas" type="number" class="input" placeholder="Nilai UAS">
+        <input id="kehadiran" type="number" class="input" placeholder="Kehadiran (%)">
+
+        <div class="flex gap-4 pt-4">
+          <button id="hitungBtn" class="btn-primary">
+            <i class="fas fa-bolt"></i> Hitung
+          </button>
+          <button id="resetBtn" class="btn-secondary">
+            Reset
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULT -->
+    <section class="card text-center">
+      <h2 class="section-title justify-center">
+        <i class="fas fa-chart-line"></i> Hasil
+      </h2>
+
+      <p id="resultTitle" class="text-muted">
+        Masukkan data terlebih dahulu
+      </p>
+
+      <div id="nilaiFinal" class="nilai-glow">-</div>
+      <div id="gradeDisplay" class="grade-box">-</div>
+      <div id="statusDisplay" class="status-text">-</div>
+
+      <div class="mt-6 text-left text-sm text-muted">
+        <ul class="space-y-1">
+          <li>Tugas (20%) : <span id="detailTugas">-</span></li>
+          <li>UTS (30%) : <span id="detailUTS">-</span></li>
+          <li>UAS (40%) : <span id="detailUAS">-</span></li>
+          <li>Kehadiran (10%) : <span id="detailkehadiran">-</span></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="mt-12 text-center text-sm text-muted">
+    © 2026 Kalkulator Nilai Mahasiswa
+  </footer>
+
+</div>
+
+<script src="hitungmahasiswa.js"></script>
+</body>
+</html>
