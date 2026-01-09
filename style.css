@@ -74,7 +74,8 @@ html { scroll-behavior: smooth; }
   background: linear-gradient(135deg,#6366f1,#a855f7);
   padding: 12px 30px;
   border-radius: 999px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 /* INPUT */
